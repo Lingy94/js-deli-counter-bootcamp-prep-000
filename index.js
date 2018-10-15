@@ -6,13 +6,12 @@ function takeANumber(katzDeliLine, name){
   return `Welcome, ${name}. You are number ${queue} in line.`
 }
 
+<<<<<<< HEAD
 function nowServing(deliLine){
   
   if (deliLine.length === 0){
   return "There is nobody waiting to be served!"
 }
- // first you want to store the next person inside a variable so we have it stored
-  //then remove the person from the array 
 
 else {
   var serving = deliLine[0]
@@ -32,3 +31,14 @@ else {
   return "The line is currently:" + lineNow
 }
 }
+
+function nowServing(katzDeliLine){
+  if (katzDeliLine.length === 0){
+  return "There is nobody waiting to be served!"
+}
+else { 
+  var katzDeliLineNew = katzDeliLine.shift
+  return "Currently serving " + katzDeliLineNew[0] + ".";
+}
+}
+>>>>>>> b2dc474f757dd9393180ee58d17603fca2a76761
